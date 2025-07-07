@@ -1,0 +1,105 @@
+:root {
+  --text-color: #333;
+  --background-color: #fff;
+}
+
+/* Modo Dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #fff;
+    --background-color: #333;
+  }
+}
+
+/* Reset e configurações básicas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 0.8em;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+main {
+  width: 90%;
+  max-width: 800px;
+}
+.post-container {
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.05);
+      max-width: 600px;
+      margin:24px;
+
+    }
+    
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .subreddit {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .time-created {
+      color: #888;
+      font-size: 0.9em;
+      margin-left: 5px;
+    }
+
+    .post-title {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    .post-body {
+      font-size: 1em;
+      color: #444;
+    }
+
+    .footer-post {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content:space-between;
+      align-items: center;
+      margin-top: 16px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to right, #111827, #374151);
+      color: #fff;
+      font-size: 0.9em;
+      cursor: pointer;
+      border: 0.5px;
+      border-radius: 50px;
+      padding: 6px 12px;
+    }
+
+    .reaction i {
+      margin-right: 5px;
+    }
+    
+   .footer-page {
+     display:flex;
+     justify-content:center;
+   }
